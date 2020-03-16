@@ -73,8 +73,8 @@ ggsave('figures/Q1.pdf',units='in',width=4,height=5)
 # create a scatter plot to visualize the relationship between income and BMI, coloring points according to gender
 # use geom_smooth to add linear model fit lines, separately for males and females
 Q2a <- ggplot(ipip,aes(x=logMedInc,y=BMI, color=gender))+
-    geom_point(size=.5,alpha=.4)+
-    geom_smooth(method='lm')
+  geom_point(size=.5,alpha=.4)+
+  geom_smooth(method='lm')
 Q2a
 ggsave('figures/Q2a.pdf',units='in',width=4,height=5)
 
